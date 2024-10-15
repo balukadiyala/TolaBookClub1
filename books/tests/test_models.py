@@ -1,5 +1,9 @@
 import pytest
 from django.test import TestCase
+import pytest
+from django.test import TestCase
+from books.models import Book, Review
+from django.test import TestCase
 from books.models import Book, Review
 
 class BookModelTest(TestCase):
