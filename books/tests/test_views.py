@@ -1,6 +1,12 @@
 import pytest
 from django.test import TestCase
 from django.urls import reverse
+import pytest
+from django.test import TestCase
+from django.urls import reverse
+from books.models import Book, Review
+from django.test import TestCase
+from django.urls import reverse
 from books.models import Book, Review
 
 class BookDetailViewTest(TestCase):
