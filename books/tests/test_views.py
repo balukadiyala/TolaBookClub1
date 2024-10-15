@@ -1,9 +1,5 @@
 import pytest
-from django.test import TestCase
-from django.urls import reverse
-import pytest
-from django.test import TestCase
-from django.urls import reverse
+
 from books.models import Book, Review
 from django.test import TestCase
 from django.urls import reverse
@@ -34,5 +30,9 @@ class SubmitReviewViewTest(TestCase):
         })
         self.assertEqual(response.status_code, 302)
         self.assertEqual(Review.objects.count(), 1)
+
         self.assertEqual(Review.objects.first().rating, 4)
+
+
+
         self.assertEqual(Review.objects.first().comment, 'Good book')
