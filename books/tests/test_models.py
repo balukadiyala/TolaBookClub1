@@ -1,9 +1,4 @@
-import pytest
-from django.test import TestCase
-import pytest
-from django.test import TestCase
-from books.models import Book, Review
-from django.test import TestCase
+
 from books.models import Book, Review
 
 class BookModelTest(TestCase):
@@ -31,4 +26,6 @@ class ReviewModelTest(TestCase):
     def test_review_creation(self):
         self.assertEqual(self.review.book, self.book)
         self.assertEqual(self.review.rating, 5)
+
+
         self.assertEqual(self.review.comment, 'Excellent book')
